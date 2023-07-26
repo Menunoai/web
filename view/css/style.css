@@ -1,0 +1,839 @@
+/* ===================== chung ===================== */
+body{
+    overflow-x: hidden;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;  
+    color: #000;
+}
+
+/* ===================== header ===================== */
+.header{
+    display: flex;
+    /* căn dọc */
+    align-items: center;
+    /* phần tử con cách đều theo chiều ngang */
+    justify-content: center;
+    background-color: antiquewhite;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+}
+
+/* left */
+.header .left{
+    display: flex;
+    /* căn dọc */
+    align-items: center;
+    /* phần tử con cách đều theo chiều ngang */
+    justify-content: center;
+    margin-right: 50px;
+    position: relative;
+}
+
+.header .left li{
+    margin-right: 20px;
+}
+
+/* between */
+
+.header .between img {
+    display: block;
+    width: 300px;
+}
+
+/* right */
+.header .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.header .right input[type="text"] {
+    width: 120px;
+    padding: 5px;
+    padding-right: 90px; /* Để tạo chỗ cho icon bên phải */
+}
+
+.header .right form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .right .timkiem{
+    position: relative;
+}
+.header .right .search{
+    position: absolute;
+    transform: translateX(100%);
+    font-weight: 15px;
+}
+
+.header .right i{
+    margin-left: 20px;
+}
+
+/* ===================== home ===================== */
+.home{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    background-color: aqua;
+}
+
+/* top */
+.home .top{
+    display: flex;
+    justify-content: center;
+}
+
+.home .top .left{
+    display: flex;
+    margin: 0 100px;
+    padding: 0 50px;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 200px;
+    background-color: antiquewhite;
+}
+.home .top .between{
+    display: flex;
+    margin: 0 100px;
+    padding: 0 50px;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 200px;
+    background-color: blueviolet;
+}
+.home .top .right{
+    display: flex;
+    margin: 0 100px;
+    padding: 0 50px;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 200px;
+    background-color: antiquewhite;
+}
+
+/* slide */
+.home .slide{
+    height: 300px;
+    /* width: 80%; */
+    background-color: chartreuse;
+    /* css cho h2 */
+    text-align: center;
+    margin: 0 100px;
+}
+
+/* ===================== main ===================== */
+.main{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    background-color: aqua;
+}
+
+/* body */
+.main .body{
+    background-color: gold;
+}
+
+.main .nu,
+.main .nam,
+.main .treem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 1365px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    margin: 0 90px;
+}
+
+.main .nu .sp,
+.main .nam .sp,
+.main .treem .sp{
+    border: 1px solid #000;
+    margin-right: 20px;
+    background-color: aliceblue;
+}
+
+.main .nu .sp .anh,
+.main .nam .sp .anh,
+.main .treem .sp .anh{
+    width: 246px;
+    height: 369px;
+    background-color: #000;
+}
+
+.main .nu .sp a,
+.main .nam .sp a,
+.main .treem .sp a{
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.main .nu .sp p,
+.main .nam .sp p,
+.main .treem .sp p{
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.main .nu .sp .gia,
+.main .nam .sp .gia,
+.main .treem .sp .gia{
+    display: flex;
+    align-items: center;
+}
+
+.main .nu .sp .gia input,
+.main .nam .sp .gia input,
+.main .treem .sp .gia input{
+    margin-left: 60px;
+}
+
+.main .nu{
+    background-color: violet;
+}
+
+.main .nam{
+    background-color: blueviolet;
+}
+
+.main .treem{
+    background-color: aquamarine;
+}
+
+.main .body .tenmenu,
+.main .body .xemtatca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.main .body .tenmenu{
+    background-color: aqua;
+}
+
+.main .body .xemtatca{
+    background-color: chartreuse;
+    margin-bottom: 20px;
+}
+
+/* ===================== footer ===================== */
+.footer{
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background-color: bisque;
+}
+/*  app  */
+.app-container {
+    text-align: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.app-google img {
+    height: 30px;
+}
+
+.app-container p {
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    color: #000;
+    font-weight: bold;
+}
+
+.app-container input {
+    margin-top: 0px;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 0px;
+    width: 400px;
+    text-align: center;
+    outline: none;
+}
+
+/* footer-top  */
+.footer-top {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 70px;
+}
+
+.footer-top img {
+    height: 30px;
+}
+
+.footer-top li {
+    padding: 0 12px;
+    position: relative;
+}
+
+.footer-top li::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 80%;
+    background: #ccc;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer-top li:last-child::after{
+    display: none;
+}
+
+.footer-top li:last-child a {
+    margin-right: 12px;
+    color: #333;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* ===================== tài khoản ===================== */
+.taikhoan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: aqua;
+}
+
+.taikhoan .left,
+.taikhoan .right{
+    background-color: brown;
+    margin: 0 50px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.taikhoan .left button,
+.taikhoan .right button{
+    width: 90px;
+    height: 30px;
+}
+
+.taikhoan .left{
+    background-color: brown;
+}
+
+.taikhoan .left input[type="text"],
+.taikhoan .left input[type="password"]{
+    width: 200px;
+    height: 30px;
+    transform: translateX(-50%);
+}
+
+.taikhoan .left input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+}
+
+.taikhoan .left .quenmk{
+    transform: translateX(-31%);
+}
+
+.taikhoan .right{
+    background-color: darkgreen;
+}
+
+/* ===================== đăng ký ===================== */
+.dangky{
+    background-color: cornflowerblue;
+    margin: 20px 0;
+    justify-content: center;
+    display: flex;
+    margin-top: 80px;
+}
+
+
+/* ===================== menuhover ===================== */
+.header .left li a:hover{    
+    font-weight: bold;
+    color: #f9267b;
+}
+
+.header .left .sub_menu {
+    position: absolute;
+    border: 1px solid #ccc;
+    padding: 10px 0 10px 20px;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.header .left li:hover .sub_menu{
+    visibility: visible;
+    top: 5px;
+}
+
+.header .left .sub_menu_con li{
+    margin-bottom: 10px;
+}
+
+
+/* ===================== trang sản phẩm ===================== */
+.trangsanpham{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: red;
+}
+
+.trangsanpham .left{
+    width: 25%;
+    background-color: antiquewhite;
+}
+
+.trangsanpham .left .size .sub_size, 
+.trangsanpham .left .mausac .sub_mausac{
+    display: flex;
+}
+
+.trangsanpham .left .loc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.trangsanpham .left .loc input[type="submit"]{
+    margin-top: 10px;
+    width: 55px;
+    height: 25px;
+}
+
+.trangsanpham .left .loc input[type="submit"]:hover{
+    color: #fff;
+    background-color: #000;
+}
+
+.trangsanpham .right{
+    width: 75%;
+    background-color: aquamarine;
+}
+
+.trangsanpham .right .top{
+    background-color: #f9267b;
+}
+
+.trangsanpham .right .top h2{
+    padding-left: 40px;
+    font-size: 190%;
+}
+
+.trangsanpham .right .body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+    margin-bottom: 25px;
+    /* tự động xuống dòng khi hết chiều ngang */
+    flex-wrap: wrap;
+}
+
+.trangsanpham .right .sp{
+    width: 240px;
+    height: 480px;
+    border: 1px solid #000;
+    margin-right: 20px;
+    background-color: aliceblue;
+    margin-bottom: 10px;
+}
+
+/* Bỏ margin-right cho các sản phẩm cuối cùng trong hàng */
+.trangsanpham .right .sp:nth-child(4n) {
+    margin-right: 0;
+}
+
+/* Thêm margin-top cho các phần tử có vị trí ít hơn 5 */
+.trangsanpham .right .sp:nth-child(-n+4) {
+    margin-top: 20px;
+}
+.trangsanpham .right .sp .anh{
+    width: 240px;
+    height: 360px;
+    background-color: #000;
+}
+
+.trangsanpham .right .sp a{
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.trangsanpham .right .sp p{
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.trangsanpham .right .sp .gia{
+    display: flex;
+    align-items: center;
+}
+
+.trangsanpham .right .sp .gia input{
+    margin-left: 60px;
+}
+
+
+/* ===================== chi tiết sản phẩm ===================== */
+.chitietsp{
+    background-color: antiquewhite;
+}
+
+.chitietsp .top{
+    background-color: #f9267b;
+    display: flex;
+    height: 730px;
+    margin: 0 60px;
+    margin-top: 100px;
+}
+
+.chitietsp .top .left{
+    background-color: aqua;
+    width: 50%;
+    height: 100%;
+    margin-right: 20px;
+    display: flex;
+}
+
+.chitietsp .top .left .left_left{
+    width: 75%;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chitietsp .top .left .left_left img{
+    width: 95%;
+    background-color: #ccc;
+}
+
+.chitietsp .top .left .left_right{
+    width: 25%;
+    background-color: #f1f;
+}
+
+.chitietsp .top .left .left_right i{
+    font-size: 30px;
+    padding-left: 60px;
+    padding-top: 30px;
+}
+
+.chitietsp .top .left .left_right .anhmota{
+    margin-left: 10px;
+    margin-left: 30px;
+    width: 80%;
+    height: 80%;
+}
+
+.chitietsp .top .left .left_right .anhmota img{
+    width: 70%;
+    background-color: #000;
+    margin-bottom: 10px;
+}
+
+.chitietsp .top .right{
+    background-color: aquamarine;
+    width: 50%;
+    margin-left: 70px;
+    height: 100%;
+}
+
+.chitietsp .top .right .tensp{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.chitietsp .top .right .luotxem{
+    margin-top: 20px;   
+    margin-left: 50px;
+}
+.chitietsp .top .right .gia{
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.chitietsp .top .right .mau{
+    margin-top: 20px;  
+    margin-left: 50px;
+    display: flex;
+}
+.chitietsp .top .right .mau .mausac{
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.chitietsp .top .right .size{
+    margin-top: 20px;   
+    margin-left: 50px;
+    display: flex;
+}
+.chitietsp .top .right .size .sizeone{
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.chitietsp .top .right .soluong{
+    margin-top: 20px;  
+    margin-left: 50px;
+    display: flex;
+}
+.chitietsp .top .right .soluong input{
+    width: 60px;
+    height: 30px;
+    margin-left: 20px;
+}
+.chitietsp .top .right .them{
+    margin-top: 20px;  
+    margin-left: 50px;
+}
+.chitietsp .top .right .them button{   
+    background-color: #000;
+    color: #fff;
+}
+.chitietsp .top .right .ghichu{
+    margin-top: 20px;  
+    margin-left: 50px;
+    display: flex;
+}
+
+.chitietsp .bottom{
+    background-color: #f92b;
+    height: 550px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.chitietsp .bottom h2{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.chitietsp .bottom .show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin-bottom: 25px;
+}
+
+.chitietsp .bottom .show .sp{
+    border: 1px solid #000;
+    margin-right: 20px;
+    background-color: aliceblue;
+}
+
+.chitietsp .bottom .show .sp .anh{
+    width: 246px;
+    height: 369px;
+    background-color: #000;
+}
+
+.chitietsp .bottom .show .sp a{
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.chitietsp .bottom .show .sp p{
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.chitietsp .bottom .show .sp .gia{
+    display: flex;
+    align-items: center;
+}
+
+.chitietsp .bottom .show .sp .gia input{
+    margin-left: 60px;
+}
+
+
+/* ===================== giỏ hàng ===================== */
+.giohang{
+    display: flex;
+    background-color: #acd;
+    margin-top: 80px;
+}
+
+.giohang .left{
+    width: 70%;
+    background-color: #f1f;
+}
+
+.giohang .left h1{
+    
+}
+
+.giohang .left table{
+    padding-left: 30px;
+}
+
+.giohang .left table th{
+    padding-right: 100px;
+    font-size: 18px;
+}
+
+.giohang .left table th:first-child{
+    padding-right: 280px;
+}
+
+.giohang .left table .sp{
+    display: flex;
+}
+.giohang .left table .sp img{
+    width: 100px;
+    background-color: #1a5;
+}
+.giohang .left table .sp .thongtin{
+    padding-left: 10px;
+}
+
+.giohang .left .xoagiohang{
+    margin-top: 20px;
+    width: 20%;
+}
+
+.giohang .left .bottom{
+    margin-top: 20px;
+    width: 20%;
+    border: 1px solid #000;
+}
+
+.giohang .right{
+    width: 30%;
+    background-color: #f9267b;
+}
+
+.giohang .right .top{
+    display: flex;
+}
+
+.giohang .right .top .left{
+    padding-left: 20px;
+    background-color: aqua;
+    width: 60%;
+}
+
+.giohang .right .top .right{
+    background-color: #1a5;
+    width: 40%;
+}
+
+/* ===================== thanh toán ===================== */
+.thanhtoan{
+    display: flex;
+    margin-top: 80px;
+}
+
+.thanhtoan .left{
+    width: 60%;
+    background-color: #1a5;
+}
+
+.thanhtoan .right{
+    width: 40%;
+    background-color: #1fb;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
